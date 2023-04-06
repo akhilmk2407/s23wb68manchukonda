@@ -21,8 +21,8 @@ block content
         tr#middle
           - for (let j = 1; j <= cols; j++) 
             - if (i === j)
-                td= 1
+                td= 1+" "
             - else if (i > j)
-                td= 0
+                td= 0+" "
             - else
-                td= j
+                td= j-i+1+" "
